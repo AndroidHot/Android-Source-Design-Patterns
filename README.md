@@ -1,1 +1,3 @@
-# Android Source Design Patterns
+# Design Patterns
+
+:tokyo_tower: Learn design patterns through Java / Kotlin
