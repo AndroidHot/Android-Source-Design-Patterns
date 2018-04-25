@@ -1,4 +1,4 @@
-package io.github.androidhot.builder;
+package androidhot.github.io.designpatterndemo.builder.java;
 
 public class Phone {
   // Required parameters
