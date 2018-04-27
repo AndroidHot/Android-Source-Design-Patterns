@@ -1,36 +1,41 @@
 :tokyo_tower: 通过 Java / Kotlin 学习设计模式
 
-## 创建型（Creational）
+## 创建型
 
-- [简单工厂（Simple Factory）](#简单工厂模式])
-- 工厂方法（Factory Method）
-- 抽象工厂（Abstract Factory）
-- 单例（Singleton）
-- 原型（Prototype）
-- 建造者（Builder）
+- [简单工厂](/simplefactory)
+- [工厂方法](/factorymethod)
+- [抽象工厂](/abstractfactory)
+- [单例](/singleton)
+- [原型](/prototype/java)
+- [建造者](/builder)
 
-## 结构型（Structural）
+## 结构型
 
-- 适配器（Adapter）
-- 桥接（Bridge）
-- 组合（Composite）
-- 装饰（Decorator）
-- 外观（Facade）
-- 享元（Flyweight）
-- 代理（Proxy）
+- [适配器](/adapter)
+- 桥接
+- [组合](/composite)
+- 装饰
+- [外观](/facade)
+- 享元
+- 代理
 
-## 行为型（Behavioral）
+## 行为型
 
-- 职责链（Chain of Responsibility）
-- 命令（Command）
-- 迭代器（Iterator）
-- 中介者（Mediator）
-- 备忘录（Memento）
-- 观察者（Observer）
-- 访问者（Visitor）
-- 策略（Strategy）
-- 状态（State）
-- 模板方法（Template Method）
+- 职责链
+- 命令
+- 迭代器
+- 中介者
+- 备忘录
+- 观察者
+- 访问者
+- 策略
+- 状态
+- 模板方法
+
+---
+
+## 创建型
+
 
 ### [简单工厂模式](/simplefactory)
 
@@ -47,7 +52,9 @@
 - 工厂类负责创建的对象比较少
 - 客户端只知道传入工厂类的参数，对于如何创建对象并不关心。
 
-### [工厂方法模式](https://github.com/AndroidHot/Design-Patterns/tree/master/factorymethod)
+
+### [工厂方法模式](/factorymethod)
+
 工厂方法模式是简单工厂模式的延伸，它继承了简单工厂模式的优点，同时还弥补了一些简单工
 厂模式的不足。工厂方法模式是使用频率最高的设计模式之一，是很多开源框架和 API 类库的
 核心模式，在 Android 源码里也能经常看见它的身影。
@@ -63,7 +70,9 @@
 - 客户端不需要知道它所创建对象的类
 - 在意系统的可扩展性
 
-### [抽象工厂模式](https://github.com/AndroidHot/Design-Patterns/tree/master/abstractfactory)
+
+### [抽象工厂模式](/abstractfactory)
+
 抽象工厂模式是工厂方法模式的进一步延伸，它提供了功能更为强大的工厂类，并且具备较好的可扩展性。
 
 **优点**：
@@ -80,14 +89,47 @@
 - 系统中的产品族不止一个，而客户端每次只使用其中一个产品族
 - 产品等级结构稳定，设计完成之后不会向系统中增加或删除产品等级结构
 
-### [适配器模式](https://github.com/AndroidHot/Design-Patterns/tree/master/adapter)
+
+### [单例模式](/singleton)
+
+确保某一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。
+
+**适用场景**
+- 客户端只需要一个实例对象
+
+
+### [原型模式](/prototype)
+
+使用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
+
+**适用场景**
+- 创建新对象成本较高
+
+### [建造者模式](/builder)
+
+将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
+**适用场景**
+- 需要生成的对象有复杂的内部结构（eg:包含多个成员变量）
+- 隔离复杂对象的创建和使用
+
+
+---
+
+
+## 结构型
+
+### [适配器模式](/adapter)
+
 适配器模式将现有接口转换为客户端所期望的接口，实现了对现有类的复用。
 
 **适用场景**：
 - 进行不兼容的类型转换
 - 输入有很多种情况，但输出类型是统一的
 
-### [组合模式](https://github.com/AndroidHot/Design-Patterns/tree/master/composite)
+
+### [组合模式](/composite)
+
 组合模式使用面向对象的思想来实现树形结构的构建和处理，描述了如何将容器对象和叶子对象进行递归组合，实现简单，灵活性好。
 
 **优点**：
@@ -104,9 +146,16 @@
 - 在一个使用面向对象语言开发的系统中需要处理一个树形结构。
 - 在一个系统中能够分离出叶子对象和容器对象，而且它们的类型不固定，需要增加一些新的类型。
 
-### [外观模式](https://github.com/AndroidHot/Design-Patterns/tree/master/facade)
+
+### [外观模式](/facade)
+
 外观模式是一种使用频率非常高的设计模式，它通过引入一个外观角色来简化客户端与子系统之间的交互，为复杂的子系统调用提供一个统一的入口，使子系统与客户端的耦合度降低，且客户端调用非常方便。外观模式并不给系统增加任何新功能，它仅仅是简化调用接口。
 
 **Wikipedia**:
 
 > A facade is an object that provides a simplified interface to a larger body of code, such as a class library.
+
+---
+
+
+## 行为型
