@@ -12,7 +12,7 @@
 ## 结构型
 
 - [适配器](/adapter)
-- 桥接
+- [桥接](/bridge)
 - [组合](/composite)
 - 装饰
 - [外观](/facade)
@@ -127,6 +127,13 @@
 - 进行不兼容的类型转换
 - 输入有很多种情况，但输出类型是统一的
 
+### [桥接](/bridge)
+
+**Wikipedia**:
+
+> The bridge pattern is a design pattern used in software engineering that is meant to "decouple an abstraction from its implementation so that the two can vary independently"
+
+在软件开发中如果一个类或者一个系统有多个维度变化时，可以尝试使用桥接模式对其进行设计。
 
 ### [组合模式](/composite)
 
