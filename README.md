@@ -16,7 +16,7 @@
 - [组合](/composite)
 - [装饰](/decorator)
 - [外观](/facade)
-- 享元
+- [享元](/flyweight)
 - 代理
 
 ## 行为型
