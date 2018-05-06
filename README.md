@@ -17,7 +17,7 @@
 - [装饰](/decorator)
 - [外观](/facade)
 - [享元](/flyweight)
-- 代理
+- [代理](/proxy)
 
 ## 行为型
 
@@ -170,6 +170,17 @@
 **Wikipedia**:
 
 > A facade is an object that provides a simplified interface to a larger body of code, such as a class library.
+
+
+### [代理模式](/proxy)
+
+给某一个对象提供一个代理，并由代理对象来控制对原对象的访问和操作。
+
+**适用场景**：
+- 控制对被代理对象的访问。
+- 当创建一个对象十分消耗资源时，可以使用代理模式延迟该对象的初始化。
+- 当一个对象被引用时，提供一些额外的操作，例如将对象被调用的次数记录下来。
+
 
 ---
 
